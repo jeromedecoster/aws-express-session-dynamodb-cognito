@@ -1,0 +1,7 @@
+.directory
+node_modules
+npm-debug.log
+settings.sh
+package-lock.json
+accesskey.json
+policy.json

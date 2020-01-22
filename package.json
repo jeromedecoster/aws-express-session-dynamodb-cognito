@@ -1,0 +1,24 @@
+{
+  "name": "aws-cognito-express",
+  "version": "1.0.0",
+  "description": "aws-cognito-express",
+  "repository": "aws-cognito-express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.2.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "dynamodb-store": "^1.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "node-env-file": "^0.1.8",
+    "node-fetch": "^2.6.0"
+  }
+}

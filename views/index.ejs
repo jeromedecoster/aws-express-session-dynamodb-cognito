@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body class="p-4">
+
+    <% if (data.user) { %>
+    <h2>Hello <strong><%= data.user %></strong></h2>
+    <% } else { %>
+    <h2>Not Logged</h2>
+    <% } %>
+
+    <div class="my-4">
+        <% if (data.user) { %>
+        <a class="btn btn-primary mr-3" href="/logout">Log out</a>
+        <% } else { %>
+        <a class="btn btn-primary mr-3" href="/login">Log in</a>
+        <% if (quicklogin) { %>
+        <a class="btn btn-primary mr-3" href="/quicklogin/a">Quick log in as « a »</a>
+        <a class="btn btn-primary mr-3" href="/quicklogin/b">Quick log in as « b »</a>
+        <% } %>
+        <% } %>
+    </div>
+
+    <a href="/restricted">Go to /restricted</a>
+
+    <%- include('footer', data); %>
+
+    <script src="jquery-3.4.1.min.js"></script>
+
+</body>
+
+</html>
